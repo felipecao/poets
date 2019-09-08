@@ -1,5 +1,8 @@
+package repositories;
+
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import repositories.CachedPoetsInfoRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,8 +15,8 @@ class PoetsInfoRepositoryTest {
 
     @Test
     void mockitoTestExample() {
-        PoetsInfoRepository thisRepo = Mockito.mock(PoetsInfoRepository.class);
-        PoetsInfoRepository thatRepo = Mockito.mock(PoetsInfoRepository.class);
+        CachedPoetsInfoRepository thisRepo = Mockito.mock(CachedPoetsInfoRepository.class);
+        CachedPoetsInfoRepository thatRepo = Mockito.mock(CachedPoetsInfoRepository.class);
 
         assertNotEquals(thisRepo, thatRepo);
     }
